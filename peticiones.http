@@ -1,0 +1,29 @@
+### 1. Ver todos los autores
+GET http://localhost:3000/api/authors
+
+### 2. Crear un autor
+POST http://localhost:3000/api/authors
+Content-Type: application/json
+
+{
+    "nombre": "Ana García",
+    "email": "ana@example.com",
+    "imagen": "https://via.placeholder.com/150"
+}
+
+### 3. Ver todos los posts con sus autores
+GET http://localhost:3000/api/posts
+
+### 4. Crear un post
+POST http://localhost:3000/api/posts
+Content-Type: application/json
+
+{
+    "titulo": "Test Post API",
+    "descripcion": "Prueba API",
+    "categoria": "Test",
+    "autor_id": 1
+}
+
+### 5. Ver todos los posts de un autor
+GET http://localhost:3000/api/posts/autor/1
