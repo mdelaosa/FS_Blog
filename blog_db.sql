@@ -1,3 +1,7 @@
+-- Borrar para poder hacer pruebas
+DROP TABLE IF EXISTS posts;
+DROP TABLE IF EXISTS autores;
+
 CREATE DATABASE IF NOT EXISTS blog_db;
 USE blog_db;
 
